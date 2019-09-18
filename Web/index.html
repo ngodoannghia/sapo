@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
-<body>
+<body ng-app="app" ng-controller="mycontroller">
     
     <div class="container-fluid main">
         <div class="container">
@@ -70,19 +73,50 @@
             </div>
     </div>
    
-    <div class="container-fluid" style="margin-top: 30px ">
+    <div class="container-fluid" style="margin-top: 30px">
         <div class="container">
-            <div class="row">
-                <div class="col-9">
-                    <img src="./img/book1.png" alt="notfoud" style="max-width: 100%; max-height:100%">
+            <div class="slide">
+                <div class="slide-left">
+                    <div>
+                        <img src={{bg}} alt="not_found">
+                        <img src="{{title}}" alt="not_found" id="textbook1">
+                        <img src={{text}} alt="not_found" id="titlebook1">
+                        <img src={{book}} alt="not_found" id="imgbook1">
+                        <img src="./img/img_holder.png" alt="not found" id="imgholder">
+                        <img src="./img/bookshelf.png" alt="not_found" id="imgbooksefl">
+                        
+                        
+                        <div id="btnleft" ng-click="leftslide()"><img src="./img/btnleft.png" alt="not_found"></div>
+                        <div id="btnright" ng-click="rightslide()"><img src="./img/btnright.png" alt="not_found"></div>
+                     
+                    </div>     
                 </div>
-                <div class="col-3" style="float:right; padding-left: 20px ">
+                <div class="slide-right">
                     <img src="./img/book2.png" alt="notfoud" style="max-width: 100%; max-height:100%">
+                </div>
+
+                <div class="cart">
+
+                </div>
+                <div class="category" ng-show="false">
+                    <ul>
+                        <li class="active"><a href="#">Sách bán chạy</a></li>
+                        <li><a href="#">Sách đang giảm giá</a></li>
+                        <li><a href="#">Sách mới</a></li>
+                        <li><a href="#">Sách văn học trong nước</a></li>
+                        <li><a href="#">Sách văn học nước ngoài</a></li>
+                        <li><a href="#">Sách thiếu nhi</a></li>
+                        <li><a href="#">Sách tin học - Ngoại ngữ</a></li>
+                        <li><a href="#">Sách kinh tế</a></li>
+                        <li><a href="#">Tạp chí</a></li>
+                    </ul>
                 </div>
             </div>
 
         </div>
     </div>
+
+
 
 </body>
 </html>

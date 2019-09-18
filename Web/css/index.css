@@ -45,7 +45,7 @@ img{
 }
 
 .container{
-    width: 1140px;
+    width: 59.37%;
 }
 .row{
     margin: 0;
@@ -116,4 +116,74 @@ img{
     background-color: inherit;
     border: none;
     outline: none;
+}
+
+.slide{
+    position: relative;
+}
+.cart{
+    position: absolute;
+}
+.category{
+    position: absolute;
+    left: 0;
+    top: -6.93%;
+    color: red;
+}
+.slide-left{
+    position: absolute;
+    right: 25.6%;
+}
+.slide-right{
+    position: absolute;
+    left: 77%;
+}
+#imgholder{
+    position: absolute;
+    z-index: 1; 
+    left: 13.44%; 
+    right: 71.4%; 
+    top: 12.1%; 
+    height: 72.6%; 
+    width: 25%;
+}
+#imgbooksefl{
+    position: absolute;
+    bottom: 10.76%;
+    width: 35.14%;
+    height: 7.56%;
+    left: 8.01%;
+}
+#textbook1{
+    position: absolute;
+    height: 22.17%;
+    width: 36.67%;
+    left: 48.94%;
+    top: 25.05%;
+}
+#titlebook1{
+    position: absolute;
+    width: 44.57%;
+    height: 19.28%;
+    bottom: 25.94%;
+    left: 44.22%;
+}
+#btnleft{
+    position: absolute;
+    top: 46.12%;
+    left: 3.66%;
+}
+#btnright{
+    position: absolute;
+    top: 46.12%;
+    right: 3.66%;
+}
+#imgbook1{
+    position: absolute;
+    z-index: 2; 
+    left: 13.44%; 
+    right: 71.4%; 
+    top: 12.1%; 
+    height: 72.6%; 
+    width: 25%;
 }
