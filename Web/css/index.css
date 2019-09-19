@@ -121,22 +121,85 @@ img{
 .slide{
     position: relative;
 }
-.cart{
+
+.nav-category{
     position: absolute;
+    background-image: url('../img/bg_category.png');
+    width: 25.62%;
+    z-index: 7;
+    padding-left: 1.71%;
+    padding-right: 2.63%;  
 }
-.category{
+#active{
+    color: green;
+}
+#category-book{
+    display: none;
+}
+.nav-category ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-category ul li{
+    height: 47px;
+    line-height: 40px;
+    border-bottom: 0.2px solid gray;
+  
+}
+.nav-category ul li a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 12px;
+}
+.nav-category ul li a:hover{
+    color: green;
+}
+
+.cart-dropdown{
+    width: 31.58%;
     position: absolute;
-    left: 0;
-    top: -6.93%;
-    color: red;
+    right: 0;
+    background-color: white;
+    display: none;
+}
+.card-content{
+    color: black;
+    padding-left: 6.12%;
+    padding-right: 6.12%;
+
+}
+.card-description{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid darkgray;
+}
+.cart-dropdown div img{
+    width: 90%;
+}
+.btn-card{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.btn-card button{
+    border: none;
+    width: 100%;
+    padding: 5px;
+}
+.motabook{
+    padding-right: 10px;
 }
 .slide-left{
     position: absolute;
     right: 25.6%;
+    margin-top: 30px;
+
 }
 .slide-right{
     position: absolute;
     left: 77%;
+    margin-top: 30px;
 }
 #imgholder{
     position: absolute;

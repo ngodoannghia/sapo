@@ -13,6 +13,7 @@
         $scope.books = ['./img/imgbook1.png', './img/imgbook2.png'];
         $scope.texts = ['./img/textbook1.png', './img/textbook2.png'];
         $scope.titles = ['./img/titlebook1.png', './img/titlebook2.png'];
+        $scope.show = true;
 
         $scope.bg = $scope.bgs[i % 2];
         $scope.book = $scope.books[i % 2];
@@ -48,6 +49,9 @@
             
         }
 
+        $scope.shows = function(){
+            $scope.show = !$scope.show;
+        }
 
         $interval(function(){slideshow();}, 5000);
     }]);
